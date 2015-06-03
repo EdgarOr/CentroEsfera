@@ -120,6 +120,24 @@ public class CalculosEsfera {
         panel.setDespliegueJL(modelo);
         
     }
+
+    public float getX() {
+        return x.floatValue();
+    }
+
+    public float getY() {
+        return y.floatValue();
+    }
+
+    public float getZ() {
+        return z.floatValue();
+    }
+
+    public float getRadio() {
+        return radio.floatValue();
+    }
+    
+    
     
     
     

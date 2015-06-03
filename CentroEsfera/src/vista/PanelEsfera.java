@@ -46,7 +46,7 @@ public class PanelEsfera extends javax.swing.JPanel {
         bLimpiar = new javax.swing.JButton();
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        jLabel1.setText("Inserte los coeficientes de x^2,y^2,z^2");
+        jLabel1.setText("Inserte el coeficiente de x^2,y^2,z^2");
 
         jLabel2.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         jLabel2.setText("Inserte los coeficientes de x, y, z");
