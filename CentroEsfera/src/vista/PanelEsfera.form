@@ -38,6 +38,8 @@
           </Group>
           <Group type="102" alignment="1" attributes="0">
               <EmptySpace max="32767" attributes="0"/>
+              <Component id="JBGraficar" min="-2" max="-2" attributes="0"/>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
               <Component id="bCalcular" min="-2" max="-2" attributes="0"/>
               <EmptySpace type="separate" max="-2" attributes="0"/>
               <Component id="bLimpiar" min="-2" max="-2" attributes="0"/>
@@ -72,6 +74,7 @@
                   <Component id="bCalcular" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="bSalir" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="bLimpiar" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="JBGraficar" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
           </Group>
@@ -173,6 +176,14 @@
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="bLimpiarActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="JBGraficar">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Graficar"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="JBGraficarActionPerformed"/>
       </Events>
     </Component>
   </SubComponents>

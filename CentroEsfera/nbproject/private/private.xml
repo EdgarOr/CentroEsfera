@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/1"/>
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group name="Automatas">
-            <file>file:/C:/Users/Edgar/Desktop/CentroEsfera/src/vista/Main.java</file>
-            <file>file:/C:/Users/Edgar/Desktop/CentroEsfera/src/vista/PanelEsfera.java</file>
-            <file>file:/C:/Users/Edgar/Desktop/CentroEsfera/src/modelo/CalculosEsfera.java</file>
+        <group>
+            <file>file:/C:/Documents%20and%20Settings/fernando2/Mis%20documentos/NetBeansProjects/CentroEsfera/src/vista/Main.java</file>
+            <file>file:/C:/Documents%20and%20Settings/fernando2/Mis%20documentos/NetBeansProjects/CentroEsfera/src/opengl/GraficoEsfera.java</file>
         </group>
     </open-files>
 </project-private>

@@ -10,18 +10,21 @@ import javax.swing.DefaultListModel;
 import javax.swing.JList;
 import javax.swing.JTextField;
 import modelo.CalculosEsfera;
+import org.apache.commons.math3.fraction.Fraction;
+import opengl.GraficoEsfera;
 
 /**
  *
  * @author Edgar
  */
 public class PanelEsfera extends javax.swing.JPanel {
-
+    public static float r, x, y, z;
     /**
      * Creates new form panelEsfera
      */
     public PanelEsfera() {
         initComponents();
+        jLabel1.setText("Inserte los coeficientes de x\u00b2, y\u00b2, z\u00b2");
     }
 
     /**
@@ -44,6 +47,7 @@ public class PanelEsfera extends javax.swing.JPanel {
         bCalcular = new javax.swing.JButton();
         bSalir = new javax.swing.JButton();
         bLimpiar = new javax.swing.JButton();
+        JBGraficar = new javax.swing.JButton();
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         jLabel1.setText("Inserte el coeficiente de x^2,y^2,z^2");
@@ -68,9 +72,9 @@ public class PanelEsfera extends javax.swing.JPanel {
         valorConstanteJTF.setColumns(20);
         valorConstanteJTF.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         valorConstanteJTF.setText("16");
-        valorConstanteJTF.setToolTipText("Introduzca un Ãºnico valor entero ");
+        valorConstanteJTF.setToolTipText("Introduzca un único valor entero ");
 
-        despliegueJL.setToolTipText("AquÃ­ se presentan los resultados");
+        despliegueJL.setToolTipText("Aquí se presentan los resultados");
         jScrollPane1.setViewportView(despliegueJL);
 
         bCalcular.setText("Calcular");
@@ -91,6 +95,13 @@ public class PanelEsfera extends javax.swing.JPanel {
         bLimpiar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 bLimpiarActionPerformed(evt);
+            }
+        });
+
+        JBGraficar.setText("Graficar");
+        JBGraficar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                JBGraficarActionPerformed(evt);
             }
         });
 
@@ -115,6 +126,8 @@ public class PanelEsfera extends javax.swing.JPanel {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(JBGraficar)
+                .addGap(18, 18, 18)
                 .addComponent(bCalcular)
                 .addGap(18, 18, 18)
                 .addComponent(bLimpiar)
@@ -143,7 +156,8 @@ public class PanelEsfera extends javax.swing.JPanel {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(bCalcular)
                     .addComponent(bSalir)
-                    .addComponent(bLimpiar))
+                    .addComponent(bLimpiar)
+                    .addComponent(JBGraficar))
                 .addContainerGap())
         );
     }// </editor-fold>//GEN-END:initComponents
@@ -176,6 +190,12 @@ public class PanelEsfera extends javax.swing.JPanel {
         
     }//GEN-LAST:event_bCalcularActionPerformed
 
+    private void JBGraficarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JBGraficarActionPerformed
+        // TODO add your handling code here:        DefaultListModel modelo = new DefaultListModel();
+        bCalcularActionPerformed(evt);
+        GraficoEsfera.mostrarGrafico(r, x, y, z);
+    }//GEN-LAST:event_JBGraficarActionPerformed
+
     public void setDespliegueJL(DefaultListModel modelo) {
         this.despliegueJL.setModel(modelo);
     }
@@ -194,6 +214,7 @@ public class PanelEsfera extends javax.swing.JPanel {
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton JBGraficar;
     private javax.swing.JButton bCalcular;
     private javax.swing.JButton bLimpiar;
     private javax.swing.JButton bSalir;

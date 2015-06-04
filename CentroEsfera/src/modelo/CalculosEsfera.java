@@ -119,6 +119,10 @@ public class CalculosEsfera {
         modelo.addElement(" Radio: \u221a(" + radio.multiply(-1) + ")");
         panel.setDespliegueJL(modelo);
         
+        PanelEsfera.r = this.getRadio();
+        PanelEsfera.x = this.getX();
+        PanelEsfera.y = this.getY();
+        PanelEsfera.z = this.getZ();
     }
 
     public float getX() {
